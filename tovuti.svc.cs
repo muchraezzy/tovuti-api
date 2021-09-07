@@ -324,7 +324,7 @@ namespace tovuti_api
                     {
                         status = "The product '" + body.pname + "' has been successfully added";
                         response.ResponseCode = 1;
-                        response.ResponseDetails = status;
+                        response.ResponseDetails = prod_id.ToString();
 
                     }else if (prod_id != 0 && Exists != null)
                     {
